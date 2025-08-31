@@ -13,7 +13,7 @@ module registerBank (
     // Escritura síncrona
     //Se activa solo en el flanco de subida del reloj.
     always @(posedge clk) begin
-        if (we) //si we esta actuvo(1)
+        if (we) //si we esta activo(1)
             registers[write_addr] <= write_data;
     end
 
